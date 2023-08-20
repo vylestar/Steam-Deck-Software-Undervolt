@@ -67,7 +67,7 @@ echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=UVsoftware
 Exec=bash /home/deck/.local/bin/uvlauncher.sh
-Icon=cryo-utilities
+Icon=/home/deck/.local/bin/voltageicon.png
 Terminal=false
 Type=Application"
 

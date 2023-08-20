@@ -28,10 +28,6 @@ cp_file $fromPath $toPath "ryzenadj"
 cp_file $fromPath $toPath "set-ryzenadj-tweaks.sh"
 cp_file $fromPath $toPath "statusadj.txt"
 
-fromPath="./"
-toPath="/home/Desktop/"
-cp_file $fromPath $toPath "uvlauncher.sh"
-
 fromPath="./etc/systemd/system/"
 toPath="/etc/systemd/system/"
 cp_file $fromPath $toPath "ac.target"

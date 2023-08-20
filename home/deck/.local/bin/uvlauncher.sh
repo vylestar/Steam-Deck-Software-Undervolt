@@ -16,7 +16,7 @@ if [[ $? -eq 0 ]]; then
                    "Experimental Undervolt On" "Enable experimental undervolt" \
                    "Edit Experimental UV Values" "Edit experimental undervolt values" \
                    "Undervolt On" "Enable undervolt" \
-                   "Edit UV Values" "Edit undervolt values" \
+                   "Apply Experimental UV Values" "Apply tested experimental values as default UV" \
                    "Undervolt OFF" "Disable undervolt" \
                    "Exit" "Exit the program")
 

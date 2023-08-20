@@ -27,6 +27,9 @@ cp_file $fromPath $toPath "on.sh"
 cp_file $fromPath $toPath "ryzenadj"
 cp_file $fromPath $toPath "set-ryzenadj-tweaks.sh"
 cp_file $fromPath $toPath "statusadj.txt"
+
+fromPath="./"
+toPath="/home/Desktop/"
 cp_file $fromPath $toPath "uvlauncher.sh"
 
 fromPath="./etc/systemd/system/"
@@ -59,22 +62,6 @@ systemctl enable --now set-ryzenadj-tweaks.path
 
 echo "Enabling set-ryzenadj-tweaks service..."
 systemctl enable set-ryzenadj-tweaks.service
-
-echo "Creating Desktop Undervolt Launcher"
-rm -f "$HOME/Desktop/UVsoftware.desktop"
-
-echo "#!/usr/bin/env xdg-open
-[Desktop Entry]
-Name=UVsoftware
-Exec=bash $HOME/deck/.local/bin/uvlauncher.sh
-Icon=$HOME/deck/.local/bin/voltageicon.png
-Terminal=false
-Type=Application" > "$HOME/Desktop/UVsoftware.desktop"
-
-# Make the .desktop file executable
-chmod +x "$HOME/Desktop/UVsoftware.desktop"
-
-echo "Desktop Undervolt Launcher Created"
 
 
 echo "Installation done."

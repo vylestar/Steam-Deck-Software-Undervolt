@@ -42,7 +42,7 @@ if [[ $? -eq 0 ]]; then
             /home/deck/.local/bin/on.sh
             ;;
         "Apply Experimental Values")
-            zenity --info --title "Option Selected" --text "Apply tested experimental UV values and set it as default"
+            zenity --info --title "Option Selected" --text "Set tested experimental values as default UV"
             # Add your commands for editing undervolt values here
             ;;
         "Undervolt OFF")

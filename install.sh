@@ -60,6 +60,7 @@ systemctl enable --now set-ryzenadj-tweaks.path
 echo "Enabling set-ryzenadj-tweaks service..."
 systemctl enable set-ryzenadj-tweaks.service
 
+
 desktop_file="$HOME/Desktop/MyApp.desktop"
 app_executable="/home/deck/.local/bin/uvlauncher.sh"
 app_icon="/home/deck/.local/bin/voltageicon.png"
@@ -74,6 +75,7 @@ echo "Type=Application" >> "$desktop_file"
 chmod +x "$desktop_file"
 
 echo "Desktop entry for MyApp created."
+
 
 
 echo "Installation done."

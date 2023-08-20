@@ -60,7 +60,7 @@ systemctl enable --now set-ryzenadj-tweaks.path
 echo "Enabling set-ryzenadj-tweaks service..."
 systemctl enable set-ryzenadj-tweaks.service
 
-desktop_file="$HOME/Desktop/uvlauncher.sh.desktop"
+desktop_file="$HOME/Desktop/uvlauncher.desktop"
 
 echo "[Desktop Entry]" > "$desktop_file"
 echo "Name=uvlauncher.sh" >> "$desktop_file"

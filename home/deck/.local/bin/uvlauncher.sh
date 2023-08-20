@@ -39,8 +39,8 @@ if [[ $? -eq 0 ]]; then
             zenity --info --title "Option Selected" --text "Enabling undervolt..."
             /home/deck/.local/bin/on.sh
             ;;
-        "Edit UV Values")
-            zenity --info --title "Option Selected" --text "Edit undervolt values selected."
+        "Apply Expiremental Values")
+            zenity --info --title "Option Selected" --text "Apply tested expiremental UV values and make this standard values"
             # Add your commands for editing undervolt values here
             ;;
         "Undervolt OFF")

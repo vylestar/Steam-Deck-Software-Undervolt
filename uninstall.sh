@@ -25,7 +25,7 @@ rm $remPath"on.sh"
 rm $remPath"ryzenadj"
 rm $remPath"set-ryzenadj-tweaks.sh"
 rm $remPath"statusadj.txt"
-rm $remPath"uvlauncher..sh"
+rm $remPath"uvlauncher.sh"
 
 remPath="/etc/systemd/system/"
 rm $remPath"ac.target"

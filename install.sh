@@ -61,20 +61,21 @@ echo "Enabling set-ryzenadj-tweaks service..."
 systemctl enable set-ryzenadj-tweaks.service
 
 echo "Creating Desktop Undervolt Launcher"
-rm -rf /home/Desktop/UVsoftware.desktop 2>/dev/null
+rm -f "$HOME/Desktop/UVsoftware.desktop"
 
 echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=UVsoftware
-Exec=bash /home/deck/.local/bin/uvlauncher.sh
-Icon=/home/deck/.local/bin/voltageicon.png
+Exec=bash $HOME/deck/.local/bin/uvlauncher.sh
+Icon=$HOME/deck/.local/bin/voltageicon.png
 Terminal=false
-Type=Application"
+Type=Application" > "$HOME/Desktop/UVsoftware.desktop"
 
 # Make the .desktop file executable
-chmod +x "/home/Desktop/UVsoftware.desktop
+chmod +x "$HOME/Desktop/UVsoftware.desktop"
 
 echo "Desktop Undervolt Launcher Created"
+
 
 echo "Installation done."
 echo ""

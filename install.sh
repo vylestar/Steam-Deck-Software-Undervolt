@@ -65,7 +65,7 @@ rm -rf "$HOME"/Desktop/UVsoftware.desktop 2>/dev/null
 echo "#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=UVsoftware
-Exec=bash $HOME/.local/bin/uvlauncher.sh
+Exec=bash $HOME/deck/.local/bin/uvlauncher.sh
 Icon=cryo-utilities
 Terminal=false
 Type=Application

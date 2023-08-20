@@ -4,7 +4,9 @@ zenity --question --title "Disclaimer" \
 --width=500 --height=200 \
 --text="This program offers an easy way to undervolt a Steam Deck as safely as possible and without entering the BIOS or disabling read-only using RyzenAdj and systemd targets based on Chris Down's guide.
 
-As with any undervolt, exercise caution. While this project greatly reduces the risk of bricking your deck, it does not in any way guarantee you won't damage your hardware. Use at your own risk."
+As with any undervolt, exercise caution. While this project greatly reduces the risk of bricking your deck, it does not in any way guarantee you won't damage your hardware. Use at your own risk.
+
+Do you wish to proceed?"
 
 if [[ $? -eq 0 ]]; then
     # Display the main menu using zenity

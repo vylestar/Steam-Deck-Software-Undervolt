@@ -27,6 +27,7 @@ cp_file $fromPath $toPath "on.sh"
 cp_file $fromPath $toPath "ryzenadj"
 cp_file $fromPath $toPath "set-ryzenadj-tweaks.sh"
 cp_file $fromPath $toPath "statusadj.txt"
+cp_file $fromPath $toPath "uvlauncher.sh"
 
 fromPath="./etc/systemd/system/"
 toPath="/etc/systemd/system/"
@@ -58,6 +59,18 @@ systemctl enable --now set-ryzenadj-tweaks.path
 
 echo "Enabling set-ryzenadj-tweaks service..."
 systemctl enable set-ryzenadj-tweaks.service
+
+echo "Creating Desktop Undervolt Launcher"
+rm -rf "$HOME"/Desktop/CryoUtilities.desktop 2>/dev/null
+echo "#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=UVsoftware
+Exec=bash $HOME/.local/bine/launcher.sh
+Icon=cryo-utilities
+Terminal=false
+Type=Application
+StartupNotify=false" >"$HOME"/Desktop/UVsoftware.desktop
+chmod +x "$HOME"/Desktop/UVsoftware.desktop
 
 echo "Installation done."
 echo ""

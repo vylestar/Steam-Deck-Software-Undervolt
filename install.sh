@@ -69,7 +69,6 @@ Exec=bash $HOME/deck/.local/bin/uvlauncher.sh
 Icon=cryo-utilities
 Terminal=false
 Type=Application
-StartupNotify=false" >"$HOME"/Desktop/UVsoftware.desktop
 chmod +x "$HOME"/Desktop/UVsoftware.desktop
 
 echo "Installation done."

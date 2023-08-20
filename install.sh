@@ -50,6 +50,7 @@ chmod 755 $toPath"on.sh"
 chmod 755 $toPath"off.sh"
 chmod 755 $toPath"uvlauncher.sh"
 chmod 444 $toPath"voltageicon.png"
+chmod 666 $toPath"testuv.sh"
 
 echo "Ensuring undervolt is off..."
 bash $toPath"off.sh"

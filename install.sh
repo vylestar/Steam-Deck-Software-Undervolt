@@ -47,6 +47,8 @@ chmod 666 $toPath"experimentaladj.txt"
 chmod 755 $toPath"experimental.sh"
 chmod 755 $toPath"on.sh"
 chmod 755 $toPath"off.sh"
+chmod 755 $toPath"uvlauncher.sh"
+chmod 444 $toPath"voltageicon.png"
 
 echo "Ensuring undervolt is off..."
 bash $toPath"off.sh"

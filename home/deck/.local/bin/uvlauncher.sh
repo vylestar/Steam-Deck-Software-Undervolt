@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Make uvlauncher.sh executable
-chmod +x "$HOME/deck/.local/bin/uvlauncher.sh"
-
 zenity --question --title "Disclaimer" \
 --width=500 --height=200 \
 --text="This program offers an easy way to undervolt a Steam Deck as safely as possible and without entering the BIOS or disabling read-only using RyzenAdj and systemd targets based on Chris Down's guide.

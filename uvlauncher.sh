@@ -13,7 +13,7 @@ if [[ $? -eq 0 ]]; then
     # Check if password is not empty
     if [[ -n "$password" ]]; then
         # Use 'sudo' with the provided password to run the script
-        echo "$password" | sudo -S ./uvlauncher.sh
+        echo "$password" | sudo -S /home/deck/.local/bin/uvlauncher.sh
     else
         zenity --info --title "Password Entry" --text "No password entered. Exiting..."
     fi
